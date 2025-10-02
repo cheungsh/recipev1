@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <h1>Let's Cook!</h1>
+      <h2>You Pick The Ingredients, We Pick The Recipes.</h2>
+    </div>
+
+    <!-- Select Ingredient -->
+    <h3>🥕 Pick Ingredients</h3>
+    <div id="ingredient-buttons" class="tags-row"></div>
+
+    <!-- Dietary Preferences -->
+    <h3>🥗 Dietary Preferences (Optional)</h3>
+    <div id="diet-buttons" class="tags-row"></div>
+
+    <!-- Health Score Slider -->
+    <h3>💚 Health Score (Optional)</h3>
+    <!--Ref: https://www.w3schools.com/howto/howto_js_rangeslider.asp-->
+    <div class="slider-section">
+      <input type="range" min="0" max="100" value="65" id="healthScore" step="5" />
+      <div id="healthScoreValue">65 🙂</div>
+    </div>
+
+    <!-- Get Recipes Button -->
+    <div class="center-btn">
+      <button id="get-recipes-btn">Get Recipes</button>
+    </div>
+
+    <!-- Recipes -->
+    <div id="recipes"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
